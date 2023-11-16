@@ -4,7 +4,20 @@ using namespace std;
 
 int main()
 {
-	cout << "Hello World!" << endl;
+	int num;
+	cout << "Enter a number: ";
+	cin >> num;
+
+	int *ptrNum = &num;
+
+	if (*ptrNum > 0){
+		cout << "The number is positive." << endl;
+	}
+	else if (*ptrNum < 0){
+		cout << "The number is negative." << endl;
+	}
+	else{
+		cout << "The number is zero." << endl;
+	}
 	return 0;
 }
-```
